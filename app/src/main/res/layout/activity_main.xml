@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="405dp"
+        android:layout_height="732dp"
+        android:background="@android:color/holo_orange_light"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/edtLatitud"
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="13dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/hint_latitud"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edtLongitud"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="13dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/hint_longitud"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnIrMapa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/btn_irAlMapa" />
+
+        <LinearLayout
+            android:layout_width="359dp"
+            android:layout_height="126dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/googlemaps"
+            android:orientation="horizontal"></LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="50dp"
+            android:text="@string/zoom"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="24sp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="100dp" />
+
+        <NumberPicker
+            android:id="@+id/numberPicker"
+            android:layout_width="220dp"
+            android:layout_height="117dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="36dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/btnAgregar"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="49dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
